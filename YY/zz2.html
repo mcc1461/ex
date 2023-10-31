@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/mcc_icon_v4.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfoli</title>
+</head>
+<body>
+    <main>
+        <header class="top">
+            <h1 class="name">Mustafa COSKUNCELEBI</h1>
+            <nav class="c-nav">
+                <ul class="ul-first">
+                    <li class="nav">Home</li>
+                    <li class="nav">About</li>
+                    <li class="nav">Projects</li>
+                    <li class="nav">Contact</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="entrance">
+            <p class="par one">
+                Hi there <span>👋</span> <br>
+                I am Mustafa COSKUNCELEBI.
+            </p>
+            <p class="par two">
+                I have a great passion for software development.
+            </p>
+            <div class="projects">
+
+                <fieldset style="border: 10px solid white; border-radius: 5px; padding: 5px; min-height:30vh; font-family: serif;" >
+                <legend><b><span class="c-span" style="font-family: Arial, sans-serif; color: #7b9691">---</span> <span id="my-projects"> My Projects</span>  <span class="c-span" style="font-family: Arial, sans-serif; color: #7b9691">---</span></b> </legend>
+                
+                <div class="project part1">
+                    <div class="box box1"></div>
+                    <figure id="fig1">
+                        <img id="img1" src="./assets/camera01.jpg" alt="" class="project img">
+                        <figcaption id="cap1">
+                            Photography
+                        </figcaption>
+                    </figure>
+                    <div class="box box2"></div>
+                    <figure id="fig2">
+                        <img id="img2"  src="./assets/logo_mcc_tarz.png" alt="" class="project img">
+                        <figcaption id="cap2">
+                            Logo
+                        </figcaption>
+                    </figure>
+                    <div class="box box3"></div>
+                    <figure id="fig3">
+                        <img id="img3" src="./assets/webdev3.png" alt="" class="project img">
+                        <figcaption id="cap3">
+                            Website
+                        </figcaption>
+                    </figure>
+                </div>
+            </fieldset>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="sec1">
+            <h1 class="contact">Contact Me</h1>
+        </section>
+        <section class="sec2"></section>
+            <ul class="ul-second">
+                <li class="list1">
+                    <i class="fa-brands fa-square-github"></i>
+                    
+                    GitHub
+                </li>
+                <li class="list2">
+                    <i class="fa-brands fa-square-instagram"></i>
+                    Instagram
+                </li>
+                <li class="list3">
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    Twitter
+                </li>
+                <li class="list4">
+                    <i class="fa-brands fa-linkedin"></i>
+                    LinkedIn
+                </li>
+            </ul>
+            <form action="" class="contact-form">
+                <p id="send-message" >Send Message</p>
+                <label for="username"></label>
+                <input type="text" name="username" id="username" placeholder="Name" required 
+                autocomplete="given-name">
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Email" required autocomplete="off">
+                <label for="message"></label>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Your Message" autocomplete="off"></textarea>
+                <div class="sending-part">
+                    <label for="sendCheckbox" id="send-button">SEND</label>
+                    <input id="sendCheckbox" type="checkbox" onclik="myFunction()">
+                    <br><br><br>
+                </div>
+            </form>
+            <div class="result">
+                merhaba
+                <p id="textResult" style="display:none">Checkbox is CHECKED!</p>
+            </div>
+            <br><br>
+    </footer>
+    <script>
+        function myFunction() {
+            alert("Mustaf ne haber?");
+    var cBox = document.getElementById("sendCheckbox");
+    var text1 = document.getElementById("textResult");
+    if (cBox.checked == true){
+      text1.style.display = "block";
+      alert("işaret verildi...");
+    } else {
+       text.style.display = "none";
+    }
+  }
+    </script>
+</body>
+</html>
