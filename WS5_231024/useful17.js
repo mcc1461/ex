@@ -2,14 +2,17 @@
 // LUCKY LUKE; 
 // joe jack william averell dalton
 // Belle Star, Buffalo Bill, ANNE DALTON
-///* 
+//
 //TODO STRING
-// let namesD = ["Joe", "Jack", "William", "Averell"]
-// let strN1 = namesD.toString()
-// console.log("toString\t: ",strN1);  // string
+let namesD = ["Joe", "Jack", "William", "Averell"]
 
-// let strNames2a = namesD.join(",")
-// console.log('join(",")\t: ',strNames2a);  // string
+console.log(namesD)
+let strN1=namesD.toString()
+console.log("toString\t: ",strN1);  // string
+
+let strN2 = namesD.join(" ")
+console.log("toString\t: ",strN2);  // string
+console.log('join(",")\t: ',strNames2a);  // string
 // let strNames2b = namesD.join(" and ")
 // console.log('join(" and ")\t: ',strNames2b);  // string
 // console.log("Type-strNames2b\t: ", typeof strNames2b);
@@ -18,7 +21,7 @@
 // [length-1); 
 
 // console.log("*****************");
-//*/
+
 /*
 //TODO concat
 let names22 = ["Red Kit", "Calamity Jane"]
@@ -518,27 +521,27 @@ console.log(a.indexOf(2));
    
 // //? 24)
 
-const products = [ 
-{"model" : "HP Pavilion", "price": 999},
-{"model": "Dell XPS", "price": 888},
-{"model":"MacBook Air", "price": 1111}, 
-{"model": "Asus ROG Strix", "price": 3333}]
-// let z1=products.reduce((max, q) => ((max.price > q.price) ? max.price : q.price), products[0].price);
-// console.log(z1);
-let z2=products.reduce((max, q) => ((q.price > max.price) ? q.price : max.price), products[0].price);
-console.log(z2);
+// const products = [ 
+// {"model" : "HP Pavilion", "price": 999},
+// {"model": "Dell XPS", "price": 888},
+// {"model":"MacBook Air", "price": 1111}, 
+// {"model": "Asus ROG Strix", "price": 3333}]
+// // let z1=products.reduce((max, q) => ((max.price > q.price) ? max.price : q.price), products[0].price);
+// // console.log(z1);
+// let z2=products.reduce((max, q) => ((q.price > max.price) ? q.price : max.price), products[0].price);
+// console.log(z2);
 
 
 
-const products2 = [ 
-    {"model": "HP Pavilion", "price": 999},
-    {"model": "Dell XPS", "price": 888},
-    {"model": "MacBook Air", "price": 1111}, 
-    {"model": "Asus ROG Strix", "price": 3333}
-  ];
+// const products2 = [ 
+//     {"model": "HP Pavilion", "price": 999},
+//     {"model": "Dell XPS", "price": 888},
+//     {"model": "MacBook Air", "price": 1111}, 
+//     {"model": "Asus ROG Strix", "price": 3333}
+//   ];
   
-  let maxPrice = products2.reduce((max, product) => (product.price > max ? product.price : max), 0);
-  console.log(maxPrice);
+//   let maxPrice = products2.reduce((max, product) => (product.price > max ? product.price : max), 0);
+//   console.log(maxPrice);
   
 
 // console.log(products.map( p => p.price));
